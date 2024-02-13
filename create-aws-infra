@@ -1,0 +1,46 @@
+- name: ceate AWS infra - Security groups for ALB and EC2 instances, 2 EC2 instances, Target Group and ALB.
+  hosts: localhost
+  vars:
+    aws_instance_name_1: appserver1
+    aws_instance_name_2: appserver2
+    
+    region: us-east-2
+    vpc_id: vpc-6544cf0e
+    subnet1: subnet-ce4ffca5
+    subnet2: subnet-d74aa3aa
+    
+    aws_instance_type: t2.micro
+    aws_ami_id: ami-0d406e26e5ad4de53
+    key_name: demo-ssh
+    
+    sg_4_alb: demo-alb-sg
+    sg_4_ec2: demo-ec2-sg
+    
+    tg_name: demo-appsvr-tg   
+    alb_name: demo-appsvr-alb
+
+    timeout: 120
+  
+  tasks:
+    # create ALB security group to allow internet traffic
+    # - name: create ALB security group with var sg_4_alb to allow internet access and register output in var sg_4_alb_output
+
+    # create security group for ec2 instance to allow ALB traffic to the ec2 instances
+    # - name: create security group with var sg_4_ec2 to allow nbound traffic from ALB security group sg_4_alb_ouput group, register the output in var 
+     
+    # Create first ec2 instance appsvr1 in the subnet1
+    # - name: create an EC2 instance with var aws_instance_name_1, subnet1, sg_4_ec2, key_name, register the output in var ec2_instance_1
+    
+    # Create second ec2 instance appsvr2 in the subnet2
+    # - name: create an EC2 instance with var aws_instance_name_2, subnet2, sg_4_ec2, key_name, register the output in var ec2_instance_2
+
+    # create a target group with a default health check
+    # - name: create a target group in given vpc, regsiter ec2_instance_output_1, ec2_instance_output_2 as targets on port 80
+ 
+    # setup ALB
+    # - name: create ALB with var alb_name, tg_name as target group, with subnet1 and subnet2, sg_4_alb_ouput and default forward action 
+    
+      
+        
+         
+   
