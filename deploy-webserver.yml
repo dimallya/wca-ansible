@@ -17,9 +17,3 @@
     # - name: Write webserver hostname to /var/www/html/index.html   
 
     # - name: restart httpd
-
-    
-        
-    
-
-      
