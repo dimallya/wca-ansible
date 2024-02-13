@@ -40,7 +40,3 @@
     # setup ALB
     # - name: create ALB with var alb_name, tg_name as target group, with subnet1 and subnet2, sg_4_alb_ouput and default forward action 
     
-      
-        
-         
-   
