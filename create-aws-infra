@@ -23,10 +23,10 @@
   
   tasks:
     # create ALB security group to allow internet traffic
-    # - name: create ALB security group with var sg_4_alb to allow internet access and register output in var sg_4_alb_output
+    # - name: create ALB security group with var sg_4_alb to allow internet access on port 80 and register output in var sg_4_alb_output
 
     # create security group for ec2 instance to allow ALB traffic to the ec2 instances
-    # - name: create security group with var sg_4_ec2 to allow nbound traffic from ALB security group sg_4_alb_ouput group, register the output in var 
+    # - name: create security group with var sg_4_ec2 to allow inbound traffic from ALB security group sg_4_alb_ouput, register the output in var 
      
     # Create first ec2 instance appsvr1 in the subnet1
     # - name: create an EC2 instance with var aws_instance_name_1, subnet1, sg_4_ec2, key_name, register the output in var ec2_instance_1
