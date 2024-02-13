@@ -1,0 +1,25 @@
+- name: Deploy a sample on webservers
+  hosts: webservers
+  become: yes
+  vars:
+    welcome_note: "Welcome to Demo Web Server"
+  tasks:
+    # - name: Update packages for Debian Operating system
+    
+    # - name: Update packages for RedHat Operating system  
+        
+    # - name: Install httpd package
+
+    # - name: Start and enable httpd service
+    
+    # - name: Create new file /var/www/html/index.html with content of var welcome_note
+    
+    # - name: Write webserver hostname to /var/www/html/index.html   
+
+    # - name: restart httpd
+
+    
+        
+    
+
+      
