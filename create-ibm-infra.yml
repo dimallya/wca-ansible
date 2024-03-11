@@ -22,4 +22,4 @@
     alb_name: demo-appsvr-alb
 
   tasks:
-    # - name: Create IBM Cloud VSI instance
+    # - name: Create IBM Cloud Virtual Server Instance
